@@ -1,7 +1,7 @@
 import "./App.css";
+
 import axios from "axios";
 import { useEffect, useState } from "react";
-
 function App() {
   const [name, setName] = useState(0);
   const [text, setText] = useState(0);
