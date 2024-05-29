@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -9,7 +8,7 @@ function App() {
   const [data, setData] = useState();
   const getData = async () => {
     try {
-      const response = await axios.get("http://34.125.107.233:8080/api/boards");
+      const response = await axios.get("http://${location.host}/api/boards");
       setData(response.data);
       console.log(response);
       console.log(response.data);
